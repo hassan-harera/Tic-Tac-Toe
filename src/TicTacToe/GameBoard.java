@@ -3,6 +3,7 @@ package TicTacToe;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.text.NumberFormat;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 
@@ -23,12 +24,10 @@ public class GameBoard extends JFrame {
                 panels[i][j].setBorder(BorderFactory.createTitledBorder(null, "", TitledBorder.CENTER, TitledBorder.BOTTOM, new Font("times new roman", Font.PLAIN, 48), Color.yellow));
 
                 labels[i][j] = new Label();
-                labels[i][j].setLocation(panels[i][j].getX(), panels[i][j].getY() / 2);
-                labels[i][j].setFont(new Font(labels[i][j].getName(), Font.BOLD, 12));
+                labels[i][j].setFont(new Font("BOLD", 1, 20));
 
                 panels[i][j].add(labels[i][j]);
                 panels[i][j].addMouseListener(new MouseAction(i, j));
-
                 frame.getContentPane().add(panels[i][j]);
             }
         }
