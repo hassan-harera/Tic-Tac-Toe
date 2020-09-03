@@ -6,7 +6,7 @@
 
 
 <h2>Start of game</h2>
-<img src="Screenshots/start of game.png" width="500" height="600">
+<img src="Screenshots/game board.png" width="500" height="600">
 <br><br>
 
 
